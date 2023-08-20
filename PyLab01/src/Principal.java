@@ -9,12 +9,12 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         do {
             vida++;
-            System.out.println("Numero de vidas:" + vida + "\t¿Cual es el numero secreto?");
+            System.out.println("Cantidad de vidas usadas:" + vida + "\t¿Podrias adivinar cual es el numero secreto?");
             rp = sc.nextInt();
-            if (rp == 1234)
+            if (rp == 420)
                 fl = true;
 
-        } while (vida < 3 && !fl);
+        } while (vida < 5 && !fl);
         if (fl == true)
             System.out.println("Has adivinado!");
         else
