@@ -9,15 +9,15 @@ public class Principal {
         Scanner sc = new Scanner(System.in);
         do {
             vida++;
-            System.out.println("Cantidad de vidas usadas:" + vida + "\t¿Podrias adivinar cual es el numero secreto?");
+            System.out.println("Cantidad de vidas usadas:" + vida + "\t¿Podra adivinar cual es el numero secreto? Si gana podra ganar un premio!");
             rp = sc.nextInt();
             if (rp == 420)
                 fl = true;
 
         } while (vida < 5 && !fl);
         if (fl == true)
-            System.out.println("Has adivinado!");
+            System.out.println("Ha adivinado! Usted ha ganado un premio!");
         else
-            System.out.println("Has perdido...");
+            System.out.println("Ha perdido... Mejor suerte para la proxima");
     }
 }
