@@ -14,9 +14,17 @@ public class Principal {
             if (rp == 420)
                 fl = true;
 
+<<<<<<< HEAD
         } while (vida < 5 && !fl);
         if (fl == true)
             System.out.println("Ha adivinado! Usted ha ganado un premio!");
+=======
+        } while (vida < 3 && !fl);
+        if (fl == true){
+            System.out.println("Ha adivinado! Usted ha ganado un premio!");
+            System.out.println(Regalo.elegir(vida));
+        }
+>>>>>>> rama2
         else
             System.out.println("Ha perdido... Mejor suerte para la proxima");
     }
